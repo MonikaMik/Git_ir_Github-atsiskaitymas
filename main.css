@@ -9,17 +9,17 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
-    height: 100%;
-    min-height: 100vh;
 }
 
 /* overlay */
 .overlay {
     background-color: rgba(27, 27, 27, 0.5);
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 1; 
 }
 main {
     position: relative;
@@ -161,9 +161,9 @@ button {
 
 
 /* css for bigger screens */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     #landingSection {
-        padding-top: 20%;
+        padding: 18% 5% 0;
         > h1 {
             font-size: 3.5rem;
         }
@@ -186,7 +186,7 @@ button {
         }
     }
     .tab {
-        margin: 3rem 15%;
+        margin: 3rem 15% 0;
         > video {
             max-height: 20rem;
             width: 100%;
@@ -196,5 +196,13 @@ button {
     .closeButton {
         top: 4rem;
         right: 3rem;
+    }
+}
+
+/* setting max tab size to prevent scroll on large screens */
+@media (min-width: 2200px) {
+    .tab {
+        margin: 3rem auto 0;
+        max-width: 90rem;
     }
 }
