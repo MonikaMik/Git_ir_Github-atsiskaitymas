@@ -141,7 +141,7 @@ main {
     }
 }
 
-#workTab > img {
+.tab > img {
     width: 100%;
     border-radius: 5px;
 }
