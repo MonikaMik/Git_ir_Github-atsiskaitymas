@@ -1,30 +1,13 @@
 const landingPage = document.querySelector('#landingSection');
+const buttons = document.querySelectorAll('button[data-target]');
 
-document
-    .querySelector('#introButton')
-    .addEventListener('click', () => {
-        landingPage.style.display = "none";
-        document.querySelector('#introTab').style.display = 'block';
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        landingPage.style.display = 'none';
+        const targetId = button.getAttribute('data-target');  
+        document.querySelector(`#${targetId}`).style.display = 'block';
     });
+});
 
-document
-    .querySelector('#workButton')
-    .addEventListener('click', () => {
-        landingPage.style.display = "none";
-        document.querySelector('#workTab').style.display = 'block';
-    });
 
-document
-    .querySelector('#aboutButton')
-    .addEventListener('click', () => {
-        landingPage.style.display = "none";
-        document.querySelector('#aboutTab').style.display = 'block';
-    });
-
-document
-    .querySelector('#contactButton')
-    .addEventListener('click', () => {
-        landingPage.style.display = "none";
-        document.querySelector('#contactTab').style.display = 'block';
-    });
 
