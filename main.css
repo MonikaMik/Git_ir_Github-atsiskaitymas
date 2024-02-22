@@ -55,6 +55,9 @@ main {
             color:rgba(255, 255, 255, 0.9);;
             text-decoration: none; 
             border-bottom: 1px dotted; 
+            &:hover {
+                color:rgb(35, 171, 255);
+            }
         }
     }
     > nav {
@@ -69,6 +72,9 @@ main {
             font-weight: 100;
             letter-spacing: 2px;
             padding: 1rem 0;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
             &:first-child {
                 border-top-right-radius: 5px;
                 border-top-left-radius: 5px;
@@ -102,8 +108,14 @@ main {
     font-weight: 500;
     letter-spacing: 4px;
 }
+button {
+    cursor: pointer;
+}
 
 /* tabs */
+#introTab, #workTab, #aboutTab, #contactTab {
+    display: none;
+}
 .tab {
     margin:  10px;
     padding: 3rem;
@@ -137,6 +149,9 @@ main {
     top: 1rem;
     > img {
         width: 1.7rem;
+    }
+    &:hover {
+        transform: rotate(90deg);
     }
 }
 .tab > img {

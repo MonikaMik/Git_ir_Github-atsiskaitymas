@@ -21,15 +21,15 @@
             <div class="horizontalLine"></div>
             <div class="verticalLine"></div>
             <nav class="menu">
-                <button id="introButton">INTRO</button>
-                <button id="workButton">WORK</button>
-                <button id="aboutButton">ABOUT</button>
-                <button id="contactButton">CONTACT</button>
+                <button data-target="introTab">INTRO</button>
+                <button data-target="workTab">WORK</button>
+                <button data-target="aboutTab">ABOUT</button>
+                <button data-target="contactTab">CONTACT</button>
             </nav>
         </section>
         <!-- tabs -->
         <section id="introTab" class="tab">
-            <button class="closeButton"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
+            <button class="closeButton" data-target="introTab"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
             <h2 class="tabTitle">INTRO</h2>
             <video src="./resources/tab-1.mp4" controls></video>
             <p class="tabParagraph">
@@ -49,17 +49,17 @@
             </p>
         </section>
         <section id="workTab" class="tab">
-            <button class="closeButton"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
+            <button class="closeButton" data-target="workTab"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
             <h2 class="tabTitle">WORK</h2>
             <img src="./resources/tab-2.jpg" alt="man with vr glasses">
         </section>
         <section id="aboutTab" class="tab">
-            <button class="closeButton"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
+            <button class="closeButton" data-target="aboutTab"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
             <h2 class="tabTitle">ABOUT</h2>
             <img src="./resources/tab-3.jpg" alt="abstract image with microchips">
         </section>
         <section id="contactTab" class="tab">
-            <button class="closeButton"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
+            <button class="closeButton" data-target="contactTab"><img src="./resources/xmark-solid.svg" alt="x button for closing tab"></button>
             <h2 class="tabTitle">CONTACT</h2>
             <img src="./resources/tab-4.jpg" alt="abstract image with microchips">
         </section>
