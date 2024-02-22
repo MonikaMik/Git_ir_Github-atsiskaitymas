@@ -104,6 +104,9 @@ main {
 }
 
 /* tabs */
+#introTab, #workTab, #aboutTab, #contactTab {
+    display: none;
+}
 .tab {
     margin:  10px;
     padding: 3rem;
