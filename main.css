@@ -114,7 +114,6 @@ main {
     width: 100%;
     border-radius: 5px;
 }
-
 .tabTitle {
     font-size: 1.9rem;
     font-weight: 500;
@@ -140,8 +139,35 @@ main {
         width: 1.7rem;
     }
 }
-
 .tab > img {
     width: 100%;
     border-radius: 5px;
+}
+
+
+/* css for bigger screens */
+@media (min-width: 800px) {
+    #landingSection {
+        padding-top: 20%;
+        > h1 {
+            font-size: 3.5rem;
+        }
+        > nav {
+            flex-direction: row;
+            justify-content: center;
+            > button {
+                flex-basis: 10rem;
+                &:first-child {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 5px;
+                }
+                &:last-child {
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+        }
+    }
 }
