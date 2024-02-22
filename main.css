@@ -4,7 +4,8 @@
 body {
     font-family: 'Source Sans 3', sans-serif;
     color: white;
-    background-image: url("./resources/bg.jpg");
+    background: url("./resources/bg.jpg"), rgba(27, 27, 27, 0.5);
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -12,18 +13,15 @@ body {
 }
 
 /* overlay */
-.overlay {
-    background-color: rgba(27, 27, 27, 0.5);
-    position: fixed;
+body::after {
+    background-image: url('./resources/bg-overlay.png');
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; 
-}
-main {
-    position: relative;
-    z-index: 2;
+    pointer-events: none;
 }
 
 /* landing page */
