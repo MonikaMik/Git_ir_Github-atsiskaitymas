@@ -45,6 +45,16 @@ main {
             width: 2.2rem;
         }
     }
-}
 
+}
+.verticalLine {
+    height: 3rem;
+    width: 1px;
+    background-color: white;
+}
+.horizontalLine {
+    height: 1px; 
+    background-color: white;
+    width: 100%;
+}
 
