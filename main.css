@@ -102,3 +102,46 @@ main {
     font-weight: 500;
     letter-spacing: 4px;
 }
+
+/* tabs */
+.tab {
+    margin:  10px;
+    padding: 3rem;
+    background-color: #1d2123;
+    position: relative;
+}
+#introTab > video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tabTitle {
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 8px;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    width: fit-content;
+}
+.tabParagraph {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.8rem;
+}
+.closeButton {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    > img {
+        width: 1.7rem;
+    }
+}
+
+.tab > img {
+    width: 100%;
+    border-radius: 5px;
+}
