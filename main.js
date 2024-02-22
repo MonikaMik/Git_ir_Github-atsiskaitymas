@@ -9,5 +9,14 @@ buttons.forEach(button => {
     });
 });
 
+const closeButtons = document.querySelectorAll('.closeButton');
+
+closeButtons.forEach(closeButton => {
+    closeButton.addEventListener('click', () => {
+        landingPage.style.display = 'flex'; 
+        const targetId = closeButton.getAttribute('data-target');
+        document.querySelector(`#${targetId}`).style.display = 'none';
+    });
+});
 
 
